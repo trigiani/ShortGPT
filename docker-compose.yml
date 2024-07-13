@@ -1,0 +1,10 @@
+version: '2.4'
+services:
+  myshortgpt:
+    image: short_gpt_docker:latest
+    ports:
+      - "31415:31415"
+    env_file:
+      - .env
+    volumes:
+      - .:/app
